@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인 페이지</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="first">
+	<a href="main.html"><img src="image/logo_system.png" class="logo"alt="로고이미지"></a>
+	<a href="login.html" class="login">로그인</a>   
+	<a href="main.html" class="home"><img src="image/icon_home.svg" alt="홈이미지"> 홈 </a>     
+</div>
+<div class="second">
+	<p class="menu" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">검사소개</p>
+	<p class="menu" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">사용방법</p>
+</div>
+
+<div class="main">
+	<div class="thrid"> 
+		<p class="nameimg3">학교장애인식지수 온라인검사시스템 </p>
+	</div>
+	<img src="image/bg_main.png" alt="학교 이미지" class="schoolimg">
+	
+	<img src="image/logo_title.png" alt="로고 이미지2" class="nameimg2">
+
+
+	<p style="text-align: center; font-size: 30px;font-weight: bold;">학교장애인식 검사</p>
+	<div class="fourth">
+		<div>
+			<div class="circle" style="background-color: rgb(23, 186, 250)">
+				<img src="image/icon_pencil.svg"  alt="연필로고이미지">
+			</div>
+			<p class="word">학생용</p>
+		</div>
+		<div>
+			<div class="circle" style="background-color: rgb(17, 56, 212)">
+				<img src="image/icon_book.svg"  alt="책로고이미지">
+			</div>
+			<p class="word">교사용</p>
+		</div>
+		<div>
+			<div class="circle" style="background-color: rgb(17, 114, 212)">
+				<img src="image/icon_school.svg" alt="학교로고이미지">
+			</div>
+			<p class="word">교육청용</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="writeblock">
+		<div class="line">
+        	<h2>공지사항</h2>
+			<a class="modalopen1" id="modalopen1">더보기 &gt;</a>
+		</div>
+        <ul>
+            <li class="notice-item">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트<span>2024.10.30</span></li>
+            <li class="notice-item">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트<span>2024.10.30</span></li>
+            <li class="notice-item">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트<span>2024.10.30</span></li>
+			<li class="notice-item">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트<span>2024.10.30</span></li>
+            <li class="notice-item">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트<span>2024.10.30</span></li>
+        </ul>
+    </div>
+
+
+<div class="backmodal1" id="backmodalid1"></div>
+<div class="modal" id="modal1">
+    <h1>공지사항</h1>
+	<div class="searcheverything">
+		<div class="searchdiv">
+			<select id="dropdown">
+				<option value="title1">제목</option>
+				<option value="title2">제목</option>
+				<option value="title3">제목</option>
+				<option value="title4">제목</option>
+			</select>
+		</div>
+		<div class="searchcontainer">
+			<input type="text" id="searchinput" class="searchinput" placeholder="검색키워드">
+			<button class="searchbutton" id="searchbutton">검색</button>
+		</div>
+	</div>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+			<tr>
+				<td >2022E0001</td>
+				<td style="text-align: left">텍스트한줄처리텍스트한줄처리텍스트한줄처리텍스트한줄처리</td>
+				<td>관리자</td>
+				<td>2024.10.30</td>
+				<td>000</td>
+			</tr>
+            <tr>
+				<td >2022E0001</td>
+				<td style="text-align: left">텍스트한줄처리텍스트한줄처리텍스트한줄처리텍스트한줄처리</td>
+				<td>관리자</td>
+				<td>2024.10.30</td>
+				<td>000</td>
+			</tr>
+            <tr>
+				<td >2022E0001</td>
+				<td style="text-align: left">텍스트한줄처리텍스트한줄처리텍스트한줄처리텍스트한줄처리</td>
+				<td>관리자</td>
+				<td>2024.10.30</td>
+				<td>000</td>
+			</tr>
+			<tr>
+				<td >2022E0001</td>
+				<td style="text-align: left">텍스트한줄처리텍스트한줄처리텍스트한줄처리텍스트한줄처리</td>
+				<td>관리자</td>
+				<td>2024.10.30</td>
+				<td>000</td>
+			</tr>
+			<tr>
+				<td >2022E0001</td>
+				<td style="text-align: left">텍스트한줄처리텍스트한줄처리텍스트한줄처리텍스트한줄처리</td>
+				<td>관리자</td>
+				<td>2024.10.30</td>
+				<td>000</td>
+			</tr>
+
+        </tbody>
+    </table>
+	<nav class="page">
+		<ul>
+		  <li>&laquo;</li> 
+		  <li>&lsaquo;</li> 
+		  <li style="color:black; font-weight: bold;">1</li>
+		  <li>2</li>
+		  <li>3</li>
+		  <li>4</li>
+		  <li>5</li>
+		  <li>&rsaquo;</li> 
+		  <li>&raquo;</li> 
+		</ul>
+	  </nav>
+	  
+	<div class="closecontainer">
+		<button class="modalclose" id="modalclose1">닫기</button> 
+	</div>
+ 
+</div>
+
+<div class="backmodal2" id="backmodal2"></div>
+<div class="modalplus" id="modalplus">
+	<br>
+    <h2>공지사항타이틀영역공지사항타이틀영역</h2>
+		<hr>
+		<p>안녕하세요.</p>
+		<p>학교장애인식지수 검사 파일럿 테스트 안내입니다.</p>
+		<p>
+			1. 파일럿 테스트 기간 <br>
+			ㆍ신천고등학교 : 7.9(화) ~ 12(금),<br>
+			ㆍ학생/교원 대상 서울묘곡초등학교 : 7.15(월) ~ 19(금), <br>
+			ㆍ학생/교원 대상 강화중학교(인천) : 7.15(월) ~ 19(금), <br>
+			ㆍ학생/교원 대상<br>
+			2. 사용자 메뉴얼 홈페이지 메인 화면에서 사용자별(학생, 교원, 학교관리자) 동영상 메뉴얼을 확인할 수 있습니다. 
+		</p>
+		<p>작성일: 2024. 07. 04. | 조회수: 54</p>
+		<br>
+		<hr>
+		<div class="closecontainer">
+			<button class="modalclose" id="modalclose2">닫기</button>
+
+		</div>		
+	</div>
+
+    <div class="writeblock" style="height: 200px;">
+		<div class="line">
+        	<h2>메뉴얼</h2>
+			<a class="modalopen2">더보기 &gt;</a>
+		</div>
+        <ul>
+            <li><img src="image/icon_video.svg" alt="비디오 이미지"> 학생용 메뉴얼<span>2024.07.24</span></li>
+            <li><img src="image/icon_video.svg" alt="비디오 이미지"> 교사용 메뉴얼 <span>2024.07.24</span></li>
+			<li><img src="image/icon_video.svg" alt="비디오 이미지"> 학교관리자용 메뉴얼<span>2024.07.24</span></li>
+        </ul>
+        
+    </div>
+ 
+
+</div>
+
+</body>
+</html>
