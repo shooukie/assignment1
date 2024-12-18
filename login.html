@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 페이지</title>
+<style>
+    body {
+        margin: 0px;
+    }
+    .first {
+        position: relative;
+        height: 100px;
+        background-color: white;
+        padding: 5px;
+    }
+    .second {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        text-align: center;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+    }
+    .menu {
+        font-weight: bold;
+        cursor: pointer;
+        margin: 30px;
+    }
+    .logo {
+        position: absolute;
+        left: 40px;
+        top: 20%;
+        height: 80px;
+        width: auto;
+    }
+    .home {
+        position: absolute;
+        top: 40%;
+        right: 160px;
+        text-decoration: none; 
+        color: black;
+    }
+    .login {
+        position: absolute;
+        top: 30%;
+        right: 40px;
+        background-color: black;
+        border-radius: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    form label {
+        display: inline-block;
+        width: 80px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    input[type="text"], input[type="password"] {
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    input[type="submit"] {
+        width: 200px;       
+        height: 50px;     
+        font-size: 15px;  
+        background-color: blue; 
+        color: white;        
+        border: blue;       
+        border-radius: 10px; 
+        cursor: pointer;    
+    }
+    input[type="submit"]:hover {
+        background-color: darkblue; 
+    }
+    .write {
+        width: 300px;       
+        height: 40px;     
+        font-size: 15px;  
+        background-color: white; 
+        color: gainsboro;        
+        border: 1px solid gainsboro;         
+        border-radius: 10px; 
+        cursor: pointer;    
+    }
+    .new {
+        display: inline-block;
+        width: 200px;       
+        height: 50px;     
+        font-size: 15px;  
+        background-color: white; 
+        color: blue;        
+        border: 1px solid blue;      
+        border-radius: 10px; 
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;    
+    }
+    .radio-container {
+		white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color:blue;
+    }
+</style>
+</head>
+<body>
+<div class="first">
+    <a href="main.html"><img src="image/logo_system.png" class="logo" alt="로고이미지"></a>
+    <a href="login.html" class="login">로그인</a>   
+    <a href="main.html" class="home"><img src="image/icon_home.svg" alt="홈이미지"> 홈 </a>     
+</div>
+<div class="second">
+    <p class="menu" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">검사소개</p>
+    <p class="menu" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">사용방법</p>
+</div>
+
+<p style="text-align: center; font-size: 30px; font-weight: bold; margin: 50px;">로그인</p>
+<form class="radio-container">
+    <label><input type="radio" name="loginform" value="1">교원</label>
+    <label><input type="radio" name="loginform" value="2">학교관리자</label>
+    <label><input type="radio" name="loginform" value="3">교육지원청</label>
+    <label><input type="radio" name="loginform" value="4">교육청</label>
+</form>
+<form style="text-align: center;">
+    <div style="text-align: left; margin: 0 auto; width: 400px;">
+        <label for="username">아이디</label>
+        <input type="text" id="username" placeholder="아이디" class="write" style="margin-top: 20px;"><br>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="비밀번호" class="write" style="margin-top: 10px;"><br>
+    </div>
+    <input type="submit" value="로그인">
+    <p class="new">회원가입</p>
+</form>
+</body>
+</html>
